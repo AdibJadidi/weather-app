@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montseratt", sans-serif;
+}
+
+.container {
+  background-image: url("./assets/sunny.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: background-image 0.5s ease;
+}
+.container.cold {
+  transition: background-image 0.5s ease;
+  background-image: url("./assets/cold.jpg");
+}
+main {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5)
+  );
+  padding: 25px;
+}
+
+.search-box {
+  width: 100%;
+  margin-top: -25px;
+}
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 14px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0 0 16px 16px;
+
+  font-size: 20px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.location-box {
+  color: rgba(255, 255, 255, 1);
+  border-radius: 7px;
+  margin-top: 55px;
+}
+
+.location-box .location {
+  text-align: center;
+  font-size: 50px;
+}
+
+.location-box .date {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  border-radius: 16px;
+  margin: 55px auto;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.weather-box .weather {
+  color: rgb(255, 255, 255, 0.9);
+  font-size: 48px;
+  font-weight: 600;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.3);
+}
